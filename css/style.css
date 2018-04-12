@@ -1,0 +1,143 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #222;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.header-nav {	
+	position: relative;
+	max-width: 1024px;
+	height: 40px;
+	margin: 0 auto;
+	background: #91969A;
+}
+
+.btn-aside {
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.aside {
+	position: absolute;
+	top: 40px;
+	display: none;
+	width: 280px;
+	height: 100vh;
+	padding: 10px;
+	background: #98A0A9;
+	opacity: 1;
+}
+
+.aside_left {
+	left: 0;
+}
+
+.aside_right {
+	right: 0;
+}
+
+.container {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	padding-top: 40px;
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+.wrap {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.content {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	height: 100%;
+}
+
+.description {
+	padding: 10px;
+	box-sizing: border-box;
+	background: #D0D3D7;
+	overflow: hidden;
+
+	-webkit-flex: 0 0 100px;
+	-ms-flex: 0 0 100px;
+	flex: 0 0 100px;
+}
+
+.content-wrap {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+}
+
+.content-article {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+
+	padding: 10px 10px 40px;
+	box-sizing: border-box;
+	background: #BEC6CF;
+}
+
+.content-sticky {
+	-webkit-flex: 0 0 200px;
+	-ms-flex: 0 0 200px;
+	flex: 0 0 200px;
+	
+	max-height: calc(100vh - 70px);
+	padding: 10px 10px 40px;
+	box-sizing: border-box;
+	background: #98A0A9;
+	overflow: hidden;
+}
+
+.footer {
+	position: relative;
+	margin: -30px auto 0;
+	padding: 5px;
+	box-sizing: border-box;
+	max-width: 1024px;
+	height: 30px;
+	background: #91969A;
+}
+
+@media only screen and (max-width: 400px) {
+	.content-wrap {
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.content-sticky {
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+}
